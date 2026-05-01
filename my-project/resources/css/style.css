@@ -1,0 +1,35 @@
+:root {
+    --Background: #0F1720;
+    --text: #A14F3B;
+    --contentblock: #1B2838;
+}
+
+body {
+    background-color: var(--Background);
+}
+
+.nav {
+    display: flex;
+    background-color: var(--contentblock);
+    justify-content: space-between;
+    padding: 0px 50px 0px 15px;
+    align-items: center;
+}
+
+.Titel {
+    color: var(--text);
+}
+
+.nav-menu {
+    color: #B3B3B3;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 0px;
+    padding: 10px;
+}
+
+.menu {
+    margin-right: 10px;
+}
