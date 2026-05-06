@@ -10,7 +10,7 @@ use Illuminate\Validation\Rule;
 class RegistrationController extends Controller
 {
     public function create() {
-        return view('/example-register'); //CHANGE
+        return view('/register');
     }
     public function store() {
         $validatedAttributes = request()->validate([

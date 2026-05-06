@@ -3,7 +3,7 @@
 
         <!-- Logo -->
         <h1 class="text-l font-bold text-orange-400">
-        <a href="{{ route('landingspage') }}">Xenia Ludus hub</a>
+        <a href="{{ route('landingpage') }}">Xenia Ludus hub</a>
            
         </h1>
 

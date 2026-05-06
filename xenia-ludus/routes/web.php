@@ -15,6 +15,6 @@ Route::post('/logout', [SessionController::class, 'destroy']);
 Route::get('/register', [RegistrationController::class, 'create']);
 Route::post('/register', [RegistrationController::class, 'store']);
 
-Route::get('/landingspage', function () {
-    return view('landingspage');
-})->name('landingspage');
+Route::get('/landingpage', function () {
+    return view('landingpage');
+})->name('landingpage');

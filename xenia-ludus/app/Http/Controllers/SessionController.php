@@ -9,7 +9,7 @@ use Illuminate\Validation\ValidationException;
 class SessionController extends Controller
 {
     public function create() {
-        return view('/example-login'); //CHANGE to login
+        return view('/login');
     }
 
     public function store() {
@@ -23,11 +23,11 @@ class SessionController extends Controller
             ]);
         }
         request()->session()->regenerate();
-        return redirect('/login'); //CHANGE to front page?
+        return redirect('/landingpage');
     }
 
     public function destroy() {
         Auth::logout();
-        return redirect('/login'); //CHANGE to front page?
+        return redirect('/landingpage');
     }
 }
