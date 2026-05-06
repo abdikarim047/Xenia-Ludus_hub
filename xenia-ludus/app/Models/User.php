@@ -46,4 +46,14 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function role()
+{
+    return $this->belongsTo(Role::class);
+}
+
+public function followedGames()
+{
+    return $this->belongsToMany(Game::class, 'game_user_follow');
+}
 }
