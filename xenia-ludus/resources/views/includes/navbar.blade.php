@@ -2,12 +2,13 @@
     <div class="max-w-7xl mx-auto flex items-center justify-between">
 
         <!-- Logo -->
-        <h1 class="text-2xl font-bold text-orange-400">
-            Xenia Ludus hub
+        <h1 class="text-l font-bold text-orange-400">
+        <a href="{{ route('landingspage') }}">Xenia Ludus hub</a>
+           
         </h1>
 
         <!-- Links -->
-        <div class="flex space-x-6 text-lg">
+        <div class="flex space-x-6 text-m">
             <a href="#" class="hover:text-orange-400 transition">QnA</a>
             <a href="#" class="hover:text-orange-400 transition">Game</a>
             <a href="#" class="hover:text-orange-400 transition">Company</a>

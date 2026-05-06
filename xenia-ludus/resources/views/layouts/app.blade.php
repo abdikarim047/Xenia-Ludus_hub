@@ -7,11 +7,13 @@
 
     <!-- CSS van Laravel -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
 </head>
+@include('includes.navbar')
 
-<body class="bg-[#0F1720]">
+<body >
 
-    @include('includes.navbar')
+
 
     <main>
         @yield('content')

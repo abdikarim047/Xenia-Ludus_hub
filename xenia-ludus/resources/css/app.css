@@ -9,3 +9,71 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+:root {
+    --background: #0F1720;
+    --content: #1B2838;
+    --text: #EE6C4D;
+    --sec_text: #B3B3B3;
+}
+
+body {
+    background-color: var(--background);
+}
+
+/*navbar*/
+
+
+/*navbar
+
+/*LOGIN*/
+.login-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.login-content form {
+    background-color: #1B2838;
+    border-radius: 10px;
+    padding: 40px;
+    height: fit-content;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 30px #1B2838;
+
+}
+
+.login-content label,
+.login-content button {
+    margin-top: 10px;
+}
+
+
+.login-content {
+    color: #B3B3B3;
+}
+
+.login-content h1 {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.login-content input {
+
+    width: 100%;
+    margin-top: 0.25rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    outline: none;
+}
+
+.login-content input:focus {
+    box-shadow: 0 0 0 3px rgba(191, 219, 254, 1);
+}
+
+/*LOGIN*/
