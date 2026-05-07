@@ -17,7 +17,7 @@ Schema::create('users', function (Blueprint $table) {
     $table->string('email')->unique()->nullable();
     $table->timestamp('email_verified_at')->nullable();
     $table->string('wachtwoord');
-    $table->foreignId('role_id')->constrained('roles');
+    $table->foreignId('role_id')->nullable()->constrained('roles');
     $table->rememberToken();
     $table->timestamps();
 });

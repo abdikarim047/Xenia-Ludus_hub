@@ -17,7 +17,11 @@ class SessionController extends Controller
             'name' => ['required'],
             'password' => ['required'],
         ]); 
-        if (! Auth::attempt($credentials)) {
+        $loginCredentials = [
+            'naam' => $credentials['name'],
+            'password' => $credentials['password']
+        ];
+        if (! Auth::attempt($loginCredentials)) {
             throw ValidationException::withMessages([
                 'name'=> 'Sorry, password or name is incorrect',
             ]);

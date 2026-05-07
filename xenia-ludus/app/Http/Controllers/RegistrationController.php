@@ -14,12 +14,18 @@ class RegistrationController extends Controller
     }
     public function store() {
         $validatedAttributes = request()->validate([
-            'name'=> ['required', Rule::unique('users', 'name')],
+            'name'=> ['required', Rule::unique('users', 'naam')],
             'email'=> ['required', 'email', Rule::unique('users', 'email')],
             'password'=> ['required', 'confirmed'], //confirmed requires password_confirmed input
         ]); 
-        $user = User::create($validatedAttributes);
+        $user = User::create([
+            'naam' => $validatedAttributes['name'],
+            'email' => $validatedAttributes['email'],
+            'wachtwoord' => $validatedAttributes['password']
+        ]);
         Auth::login($user);
+        request()->session()->regenerate();
+        request()->session()->regenerateToken();
 
         return redirect('/');
     }

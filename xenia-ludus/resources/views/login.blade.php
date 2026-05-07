@@ -27,7 +27,7 @@
         
         {{-- ONLY FOR DEVELOPMENT PURPOSES --}}
         @auth
-        <strong style="color: red;">logged in as {{ Auth::user()->name }}</strong>
+        <strong style="color: red;">logged in as {{ Auth::user()->naam }}</strong>
         <form action="/logout" method="POST">
             @csrf
             <button>Log Out</button>
