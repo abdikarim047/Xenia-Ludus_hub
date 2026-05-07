@@ -3,8 +3,8 @@
 
         <!-- Logo -->
         <h1 class="text-l font-bold text-orange-400">
-        <a href="{{ route('landingpage') }}">Xenia Ludus hub</a>
-           
+            <a href="{{ route('landingpage') }}">Xenia Ludus hub</a>
+
         </h1>
 
         <!-- Links -->
@@ -12,6 +12,7 @@
             <a href="#" class="hover:text-orange-400 transition">QnA</a>
             <a href="#" class="hover:text-orange-400 transition">Game</a>
             <a href="#" class="hover:text-orange-400 transition">Company</a>
+            
             <a href="{{ route('login') }}" class="hover:text-blue-400 transition">Login</a>
         </div>
 

@@ -11,7 +11,7 @@
 }
 
 :root {
-    --background: #0F1720;
+    --background: #0f1320;
     --content: #1B2838;
     --text: #EE6C4D;
     --sec_text: #B3B3B3;
@@ -21,12 +21,71 @@ body {
     background-color: var(--background);
 }
 
+footer {
+    margin-top: 40px;
+}
+
 /*navbar*/
 
 
-/*navbar
+/*navbar/
 
-/*LOGIN*/
+/*LANDINGPAGE*/
+.landingpage {
+    display: grid;
+    justify-content: space-around;
+    grid-auto-flow: column;
+    align-content: space-around;
+}
+
+.landingpage .company-side,
+.landingpage .company-title,
+.landingpage .sec-content {
+    margin-top: 24px;
+}
+
+.landingpage h1 {
+    color: var(--text);
+    font-size: x-large;
+    padding-left: 10px;
+}
+
+.landingpage .company-title {
+    background-color: var(--content);
+    border-top: 5px #EE6C4D;
+    border-style: solid;
+    left: 50px;
+  
+}
+
+.landingpage .company-side {
+    background-color: var(--content);
+    margin-top: 12px;
+
+}
+
+.landingpage .sec-content {
+    background-color: var(--content);
+    border-top: 5px #EE6C4D;
+    border-style: solid;
+
+}
+
+.landingpage .content-info {
+background-color: var(--text);
+    padding: 100px 100px 100px 100px;
+    margin: 10px 0px 10px 0px;
+}
+
+.landingpage .content-block {
+    display: flex;
+        justify-content: space-evenly;
+}
+
+
+/*LANDIGNPAGE*/
+
+/*LOGINPAGE*/
 .login-content {
     display: flex;
     flex-direction: column;

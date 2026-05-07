@@ -6,9 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Publisher extends Model
 {
-   public function bedrijf()
-{
-    return $this->belongsTo(Bedrijf::class);
-}
-
+    public function bedrijf()
+    {
+        return $this->belongsTo(Bedrijf::class);
+    }
 }

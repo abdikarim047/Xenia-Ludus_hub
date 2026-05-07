@@ -9,16 +9,17 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 </head>
+
+
+<body class="" >
 @include('includes.navbar')
-
-<body >
-
 
 
     <main>
         @yield('content')
     </main>
 
+@include('includes.footer')
 </body>
 
 </html>
