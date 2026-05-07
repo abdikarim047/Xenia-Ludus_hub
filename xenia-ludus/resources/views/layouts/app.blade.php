@@ -11,15 +11,15 @@
 </head>
 
 
-<body class="" >
-@include('includes.navbar')
+<body class="">
+    @include('includes.navbar')
 
 
-    <main>
+    <main class="pb-20">
         @yield('content')
     </main>
 
-@include('includes.footer')
+    @include('includes.footer')
 </body>
 
 </html>
