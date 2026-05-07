@@ -12,7 +12,18 @@
             <a href="#" class="hover:text-orange-400 transition">QnA</a>
             <a href="#" class="hover:text-orange-400 transition">Game</a>
             <a href="#" class="hover:text-orange-400 transition">Company</a>
-            <a href="{{ route('login') }}" class="hover:text-blue-400 transition">Login</a>
+            @auth
+                <form action="/logout" method="POST">
+                    @csrf
+                    <button type="submit" class="hover:text-blue-400 transition">Logout</button>
+                </form>
+                <div class="text-red-400">
+                    {{ Auth::user()->naam }}
+                </div>
+            @endauth
+            @guest
+                <a href="{{ route('login') }}" class="hover:text-blue-400 transition">Login</a>
+            @endguest
         </div>
 
     </div>
